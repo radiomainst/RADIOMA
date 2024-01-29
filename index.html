@@ -93,7 +93,7 @@
 
         function sendMessage() {
             const currentTime = new Date().getTime();
-            var t = 120;
+            var t = 60;
             if (currentTime - lastMessageTime >= t * 1000) {
                 const message = messageInput.value;
                 if (message !== '') {
@@ -105,7 +105,7 @@
                     messageInput.value = '';
                 }
             } else {
-                alert('Puoi inviare un messaggio ogni due minuti.');
+                alert('Puoi inviare un messaggio ogni al minuto.');
             }
         }
 
