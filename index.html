@@ -158,8 +158,8 @@
         }
 
 
-        function limitAndCheckInput() {
-            const inputValue = messageInput.value.trim(20);
+        function limitAndCheckInput(20) {
+            const inputValue = messageInput.value.trim();
             const words = inputValue.split(' ');
             messageInput.value = words[0];
         }
